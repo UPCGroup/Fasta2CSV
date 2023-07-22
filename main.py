@@ -21,6 +21,5 @@ def convert(seq):
         # 数据存入csv
         df.to_csv(seq[:-6] + ".csv", sep=',', index=False)  # 转换后的文件
 
-# 传入 Fasta 文件位置，会自动保存 csv 文件
-convert("./testdata/testing_proteins_withannotation_STY.fasta")
-convert("./testdata/training_proteins_nonredundant_STY.fasta")
+# convert(Fasta 文件位置)
+# 会自动将转化后的结果保存到 CSV 文件里面
